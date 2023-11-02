@@ -8,3 +8,13 @@ var lengthOfLastWord = function (s) {
 
 const testing = lengthOfLastWord('   fly me   to   the moon  ');
 console.log(testing)
+
+/* 1108. Defanging an IP Address */
+var defangIPaddr = function(address) {
+   const defanged = address.replaceAll(/\D/g, `[.]`);
+   return defanged;
+
+};
+
+const testibng = defangIPaddr(`232.4.23.5645`);
+console.log(testibng);
