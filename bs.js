@@ -6,9 +6,6 @@ var lengthOfLastWord = function (s) {
     return count_the_letters.length;
 };
 
-const testing = lengthOfLastWord('   fly me   to   the moon  ');
-console.log(testing)
-
 /* 1108. Defanging an IP Address */
 var defangIPaddr = function(address) {
    const defanged = address.replaceAll(/\D/g, `[.]`);
@@ -16,5 +13,14 @@ var defangIPaddr = function(address) {
 
 };
 
-const testibng = defangIPaddr(`232.4.23.5645`);
-console.log(testibng);
+/* 2469. Convert the Temperature */
+var convertTemperature = function(celsius) {
+    let k_f = [];
+
+    const kelvin = celsius + 273.15;
+    const fahrenheit = celsius * 1.80 + 32.00;
+
+    k_f.push(kelvin, fahrenheit);
+
+    return k_f;
+};
