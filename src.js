@@ -38,3 +38,8 @@ var convertTemperature = function(celsius) {
 
     return k_f;
 };
+
+/* 2769. Find the Maximum Achievable Number */
+var theMaximumAchievableX = function(num, t) {
+    return num + (t * 2)
+};
