@@ -1,3 +1,19 @@
+/* 1. Two Sum */
+var twoSum = function (nums, target) {
+    let ii = [];
+
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[j] === target - nums[i]) {
+                ii.push(i, j);
+                return ii;
+            };
+
+        };
+    };
+
+};
+
 /* 58. Length of Last Word */
 var lengthOfLastWord = function (s) {
     var take_away_words = s.trim().split(" ");
@@ -33,9 +49,7 @@ var getConcatenation = function(nums) {
     nums2 = nums;
     nums2 = nums2.concat(nums);
     return nums2;
-}
-
-console.log(getConcatenation([1,3,2,1]))
+};
 
 /* 2469. Convert the Temperature */
 var convertTemperature = function(celsius) {
