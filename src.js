@@ -27,6 +27,16 @@ var numIdenticalPairs = function(nums) {
     return count;
 };
 
+/* 1929. Concatenation of Array */
+var getConcatenation = function(nums) {
+    let nums2 = [];
+    nums2 = nums;
+    nums2 = nums2.concat(nums);
+    return nums2;
+}
+
+console.log(getConcatenation([1,3,2,1]))
+
 /* 2469. Convert the Temperature */
 var convertTemperature = function(celsius) {
     let k_f = [];
